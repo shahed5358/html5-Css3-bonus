@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .welcome-message {
+            background-color: red;
+            height: 100px;
+            text-align: center;
+            color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width:688px) {
+            .welcome-message {
+                background-color: hotpink;
+                text-align: center;
+                color: yellow;
+            }
+        }
+
+        @media only screen and (min-width:689px) and (max-width:992px) {
+            .welcome-message {
+                background-color: blue;
+                text-align: center;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="welcome-message">
+            <h1>Welcome Message</h1>
+        </div>
+    </header>
+</body>
+
+</html>
